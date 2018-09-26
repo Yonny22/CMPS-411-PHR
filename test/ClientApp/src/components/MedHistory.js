@@ -21,8 +21,13 @@ class FetchData extends Component {
     return (
       <div>
         <h1>Medical History</h1>
-        <p>Here is Medical History.</p>
-        
+            <p>I think we should list cancer/heart/surgical/allergy
+                /conditions/womens&mens/eye /ear,nose,mouth,mental/std
+                history here
+            </p>
+            <p>
+                Have another tab for immunizations / exams / past hospital visits
+            </p>        
       </div>
     );
   }

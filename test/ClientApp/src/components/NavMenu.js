@@ -14,21 +14,49 @@ export default props => (
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
+
         <LinkContainer to={'/'} exact>
           <NavItem>
             <Glyphicon glyph='home' /> Home
           </NavItem>
         </LinkContainer>
+
         <LinkContainer to={'/createNewHealthRecord'}>
           <NavItem>
-            <Glyphicon glyph='education' /> Create New Health Record
+            <Glyphicon glyph='th-list' /> Create New Health Record
           </NavItem>
         </LinkContainer>
+
         <LinkContainer to={'/medHistory'}>
           <NavItem>
             <Glyphicon glyph='th-list' /> Medical History
           </NavItem>
         </LinkContainer>
+
+        <LinkContainer to={'/medicalCard'}>
+          <NavItem>
+             <Glyphicon glyph='th-list' /> Medical Quick Card
+          </NavItem>
+        </LinkContainer>
+
+        <LinkContainer to={'/personalInfo'}>
+          <NavItem>
+              <Glyphicon glyph='th-list' /> Personal Info
+          </NavItem>
+        </LinkContainer>
+
+        <LinkContainer to={'/tellFriend'}>
+          <NavItem>
+             <Glyphicon glyph='th-list' /> Tell-A-Friend
+          </NavItem>
+        </LinkContainer>
+
+        <LinkContainer to={'/uploadMedData'}>
+           <NavItem>
+              <Glyphicon glyph='th-list' /> Upload Med Apps (long shot)
+          </NavItem>
+        </LinkContainer>
+
       </Nav>
     </Navbar.Collapse>
   </Navbar>

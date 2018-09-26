@@ -5,9 +5,10 @@ import { actionCreators } from '../store/Counter';
 
 const Counter = props => (
   <div>
-        <h1>Create New Health Record</h1>
+        <h1>Personal Information</h1>
 
-    <p>You Should Add A New Health Record Here</p>
+        <p>Insurancee, Med Providers, Fam History, Caregivers, legal docs, travel health, risk factors
+            </p>
 
     
 

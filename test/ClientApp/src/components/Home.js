@@ -10,6 +10,7 @@ const Home = props => (
       <li><a href='/accountInfo'>Create an Account</a> </li>
       
     </ul>
+    <p> Create a Login page somewhere here or when this page is opened prompt a login for users?</p>
     
   </div>
 );
