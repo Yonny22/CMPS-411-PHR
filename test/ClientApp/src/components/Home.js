@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+
 const Home = props => (
     <div>
     <h1>Welcome to ArchPoint PHR!</h1>
@@ -10,11 +11,13 @@ const Home = props => (
       <li><a href='/login'>Create an Account</a> </li>
       
     </ul>
-    <p> Create a Login page somewhere here or when this page is opened prompt a login for users?</p>
-    
+        <p> Create a Login page somewhere here or when this page is opened prompt a login for users?</p>
     </div>
 );
 
 
 
+
+
 export default connect()(Home);
+
