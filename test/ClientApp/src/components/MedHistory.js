@@ -24,9 +24,29 @@ class FetchData extends Component {
             <p>I think we should list cancer/heart/surgical/allergy
                 /conditions/womens&mens/eye /ear,nose,mouth,mental/std
                 history here
+                <ul>
+                    <li><a href='/cancerHistory'>Cancer History</a></li>
+                    <li><a href='/heartHistory'>Heart History</a> </li>
+                    <li><a href='/surgicalHistory'>Surgery History</a></li>
+                    <li><a href='/allergyHistory'>Allergy History</a> </li>
+                    <li><a href='/medicalConditions'>Medical Conditions</a></li>
+                    <li><a href='/womensHistory'>Womens History</a> </li>
+                    <li><a href='/mensHistory'>Mens History</a></li>
+                    <li><a href='/faceHistory'>Ear, Nose, And Mouth</a> </li>
+                    <li><a href='/mentalHistory'>Mental History</a> </li>
+                    <li><a href='/stdHistory'>STD History</a> </li>
+                </ul>
+
             </p>
+            <h1>Immunizations and Exams</h1>
             <p>
                 Have another tab for immunizations / exams / past hospital visits
+                <ul>
+                    <li><a href='/immunizations'>Immunizations</a></li>
+                    <li><a href='/exams'>Exams</a> </li>
+                    <li><a href='/pastVisits'>History of Hospital Visits</a></li>
+                    
+                </ul>
             </p>        
       </div>
     );
@@ -69,7 +89,4 @@ function renderPagination(props) {
   </p>;
 }*/
 
-export default connect(
-  state => state.weatherForecasts,
-  dispatch => bindActionCreators(actionCreators, dispatch)
-)(FetchData);
+export default connect()(FetchData);

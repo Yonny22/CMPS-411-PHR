@@ -8,6 +8,8 @@ import MedicalCard from './components/MedicalCard';
 import PersonalInfo from './components/PersonalInfo';
 import TellAFriend from './components/TellAFriend';
 import UploadMedData from './components/UploadMedData';
+import CancerHistory from './components/CancerHistory';
+import Login from './components/Login';
 
 export default () => (
   <Layout>
@@ -18,5 +20,7 @@ export default () => (
         <Route path='/personalInfo' component={PersonalInfo} />
         <Route path='/tellFriend' component={TellAFriend} />
         <Route path='/uploadMedData' component={UploadMedData} />
+        <Route path='/cancerHistory' component={CancerHistory} />
+        <Route path='/login' component={Login} />
   </Layout>
 );

@@ -15,7 +15,4 @@ const Counter = props => (
   </div>
 );
 
-export default connect(
-  state => state.counter,
-  dispatch => bindActionCreators(actionCreators, dispatch)
-)(Counter);
+export default connect()(Counter);
