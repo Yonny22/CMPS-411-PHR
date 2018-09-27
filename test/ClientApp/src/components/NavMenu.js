@@ -41,7 +41,7 @@ export default props => (
 
         <LinkContainer to={'/personalInfo'}>
           <NavItem>
-              <Glyphicon glyph='th-list' /> Personal Info
+              <Glyphicon glyph='th-list' /> Personal Information
           </NavItem>
         </LinkContainer>
 
@@ -53,7 +53,7 @@ export default props => (
 
         <LinkContainer to={'/uploadMedData'}>
            <NavItem>
-              <Glyphicon glyph='th-list' /> Upload Med Apps (long shot)
+              <Glyphicon glyph='th-list' /> Upload Medical Records
           </NavItem>
         </LinkContainer>
 
