@@ -11,6 +11,7 @@ import UploadMedData from './components/UploadMedData';
 import CancerHistory from './components/CancerHistory';
 import Login from './components/Login';
 
+
 export default () => (
   <Layout>
         <Route exact path='/' component={Home} />
