@@ -7,7 +7,9 @@ const Counter = props => (
   <div>
         <h1>Tell A Friend</h1>
 
-    <p>Form to draft email and send it?? what brian showed us</p>
+    <p>Form to draft email and send it to another person</p>
+
+    <p>To be changed to Caregiver's invite</p>
 
     
 

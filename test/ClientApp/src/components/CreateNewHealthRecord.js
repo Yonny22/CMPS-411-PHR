@@ -10,7 +10,7 @@ const Counter = props => (
     <p>You Should Add A New Health Record Here</p>
 
     
-
+    <button>Create New Record</button>
     
   </div>
 );

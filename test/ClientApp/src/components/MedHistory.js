@@ -21,9 +21,7 @@ class FetchData extends Component {
     return (
       <div>
         <h1>Medical History</h1>
-            <p>I think we should list cancer/heart/surgical/allergy
-                /conditions/womens&mens/eye /ear,nose,mouth,mental/std
-                history here
+            <p>Tabs to all issues of medical history
                 <ul>
                     <li><a href='/cancerHistory'>Cancer History</a></li>
                     <li><a href='/heartHistory'>Heart History</a> </li>

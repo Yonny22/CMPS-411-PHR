@@ -11,6 +11,20 @@ import UploadMedData from './components/UploadMedData';
 import CancerHistory from './components/CancerHistory';
 import Login from './components/Login';
 
+import AllergyHistory from './components/AllergyHistory';
+import HeartHistory from './components/HeartHistory';
+import ENTHistory from './components/ENTHistory';
+import MedicalConditions from './components/MedicalConditions';
+import MensHealth from './components/MensHealth';
+import MentalHealth from './components/MentalHistory';
+import STDHistory from './components/STDHistory';
+import SurgeryHistory from './components/SurgeryHistory';
+import WomensHealth from './components/WomensHealth';
+
+import HospitalAdmit from './components/HospitalAdmit';
+import Immunizations from './components/Immunizations';
+
+
 
 export default () => (
   <Layout>
@@ -23,5 +37,22 @@ export default () => (
         <Route path='/uploadMedData' component={UploadMedData} />
         <Route path='/cancerHistory' component={CancerHistory} />
         <Route path='/login' component={Login} />
+
+        <Route path='/heartHistory' component ={HeartHistory} />
+        <Route path='/surgicalHistory' component ={SurgeryHistory} />
+        <Route path='/allergyHistory' component ={AllergyHistory} />
+        <Route path='/faceHistory' component ={ENTHistory} />
+        <Route path='/mensHistory' component ={MensHealth} />
+        <Route path='/mentalHistory' component ={MentalHealth} />
+        <Route path='/stdHistory' component ={STDHistory} />
+        <Route path='/womensHistory' component ={WomensHealth} />
+
+
+
+        <Route path='/pastVisits' component ={HospitalAdmit} />
+        <Route path='/immunizations' component ={Immunizations} />
+        <Route path='/pastVisits' component ={HospitalAdmit} />
+
+
   </Layout>
 );

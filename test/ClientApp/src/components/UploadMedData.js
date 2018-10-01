@@ -7,7 +7,7 @@ const Counter = props => (
   <div>
         <h1>Upload Medical Data Apps</h1>
 
-    <p>Listed as beta in my notes ? last thing well work on?</p>
+    <p>Where medical info can be uploaded through means other than data input</p>
 
     
 

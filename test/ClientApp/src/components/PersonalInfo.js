@@ -16,7 +16,9 @@ const Counter = props => (
             <li>Travel Health</li>
             <li>Risk factors</li>
         </ul>
-              
+
+        <button>Update Info</button>      
+        
   </div>
 );
 

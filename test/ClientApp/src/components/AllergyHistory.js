@@ -1,28 +1,31 @@
-﻿import React from 'react';
+import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actionCreators } from '../store/Counter';
 
-export default class CancerHistory extends React.Component{
+export default class AllergyHistory extends React.Component{
     state = {
-        oncologistName: '',
+        cardiologist: '',
         officeNumber: '',
         officeFax: '',
         officeEmail: '',
         officeAddress: '',
         address: '',
         city: '',
-        officeState: '',
+        state: '',
         zipCode: '',
         country: '',
-        typeOfCancerTumor: '',
+        typeOfHeartDisease: '',
         dateOfDiagnosis: '',
-        ageAtDiagnosis: '',
-        stageOfCancerTumor: '',
-        statusOfCancerTumor: '',
-        placeOfDiagnosis: '',
-        treatmentReceived: '',
-        dateOfTreatment: '',
+        statusOfHeartDisease: '',
+        dateResolved: '',
+        surgeryProcedure: '',
+        dateOfSurgery: '',
+        nameOfSurgeon: '',
+        surgOfficeNumber: '',
+        surgOfficeFax: '',
+        surgOfficeEmail: '',
+        surgOfficeLocation: '',
         comments: ''
         
     };
@@ -43,8 +46,8 @@ export default class CancerHistory extends React.Component{
         return(
             <form>
                 <input
-                    name="oncologistName"
-                    placeholder="Oncologist's Name" 
+                    name="cardiologist"
+                    placeholder="Cardiologist's Name" 
                     value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
@@ -52,119 +55,133 @@ export default class CancerHistory extends React.Component{
                 <input
                     name="officeNumber"
                     placeholder="Medical Office Phone #" 
-                    value={this.state.officeNumber} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="officeFax"
                     placeholder="Office's Fax" 
-                    value={this.state.officeFax} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="officeEmail"
                     placeholder="Office's Email" 
-                    value={this.state.officeEmail} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="address"
                     placeholder="Address" 
-                    value={this.state.address} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="city"
                     placeholder="City" 
-                    value={this.state.city} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br /> 
                 <input
-                    name="officeState"
-                    placeholder="Office State" 
-                    value={this.state.officeState} 
+                    name="state"
+                    placeholder="State" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="zipCode"
                     placeholder="Zip Code" 
-                    value={this.state.zipCode} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="country"
-                    placeholder="Country" 
-                    value={this.state.country} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="typeOfCancerTumor"
-                    placeholder="Enter Type Of Cancer/Tumor" 
-                    value={this.state.typeOfCancerTumor} 
+                    name="typeOfHeartDisease"
+                    placeholder="Type Of Heart Disease" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="dateOfDiagnosis"
-                    placeholder="Date of diagnosis" 
-                    value={this.state.dateOfDiagnosis} 
+                    placeholder="When were you diagnosed" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="ageAtDiagnosis"
-                    placeholder="Age at Diagnosis" 
-                    value={this.state.ageAtDiagnosis} 
+                    name="statusofHeartDisease"
+                    placeholder="What is the status of your heart disease?" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="stageOfCancerTumor"
-                    placeholder="Current Stage of Cancer/Tumor" 
-                    value={this.state.stageOfCancerTumor} 
+                    name="dateResolved"
+                    placeholder="When was this resolved?" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="statusOfCancerTumor"
-                    placeholder="Current Status of Cancer/Tumor" 
-                    value={this.state.statusOfCancerTumor} 
+                    name="surgeryProcedure"
+                    placeholder="What surgery did you have?" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeOfDiagnosis"
-                    placeholder="Place Of Diagnosis" 
-                    value={this.state.placeOfDiagnosis} 
+                    name="dateOfSurgery"
+                    placeholder="When did you have this surgery" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="treatmentReceived"
-                    placeholder="What treatment did you receive?" 
-                    value={this.state.treatmentReceived} 
+                    name="nameOfSurgeon"
+                    placeholder="What is the name of the surgeon?" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="dateOfTreatment"
-                    placeholder="Date Of Treatment" 
-                    value={this.state.dateOfTreatment} 
+                    name="surgOfficeNumber"
+                    placeholder="What is the Surgeon's Medical Office Phone #" 
+                    value={this.state.oncologistName} 
+                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                />
+                <br />
+                <input
+                    name="surgOfficeFax"
+                    placeholder="What is the Surgeon's Office's Fax" 
+                    value={this.state.oncologistName} 
+                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                />
+                <br />
+                <input
+                    name="surgOfficeEmail"
+                    placeholder="What is the surgeon's Office's Email" 
+                    value={this.state.oncologistName} 
+                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                />
+                <br />
+                <input
+                    name="surgOfficeLoacation"
+                    placeholder="What is the address of the surgeons office?" 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="comments"
                     placeholder="Comments" 
-                    value={this.state.comments} 
+                    value={this.state.oncologistName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
