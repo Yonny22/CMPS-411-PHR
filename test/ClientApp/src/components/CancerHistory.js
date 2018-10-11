@@ -42,131 +42,151 @@ export default class CancerHistory extends React.Component{
     render(){
         return(
             <form>
-                <input
-                    name="oncologistName"
-                    placeholder="Oncologist's Name" 
-                    value={this.state.oncologistName} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="officeNumber"
-                    placeholder="Medical Office Phone #" 
-                    value={this.state.officeNumber} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="officeFax"
-                    placeholder="Office's Fax" 
-                    value={this.state.officeFax} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="officeEmail"
-                    placeholder="Office's Email" 
-                    value={this.state.officeEmail} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="address"
-                    placeholder="Address" 
-                    value={this.state.address} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="city"
-                    placeholder="City" 
-                    value={this.state.city} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br /> 
-                <input
-                    name="officeState"
-                    placeholder="Office State" 
-                    value={this.state.officeState} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="zipCode"
-                    placeholder="Zip Code" 
-                    value={this.state.zipCode} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="country"
-                    placeholder="Country" 
-                    value={this.state.country} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="typeOfCancerTumor"
-                    placeholder="Enter Type Of Cancer/Tumor" 
-                    value={this.state.typeOfCancerTumor} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="dateOfDiagnosis"
-                    placeholder="Date of diagnosis" 
-                    value={this.state.dateOfDiagnosis} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="ageAtDiagnosis"
-                    placeholder="Age at Diagnosis" 
-                    value={this.state.ageAtDiagnosis} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="stageOfCancerTumor"
-                    placeholder="Current Stage of Cancer/Tumor" 
-                    value={this.state.stageOfCancerTumor} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="statusOfCancerTumor"
-                    placeholder="Current Status of Cancer/Tumor" 
-                    value={this.state.statusOfCancerTumor} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="placeOfDiagnosis"
-                    placeholder="Place Of Diagnosis" 
-                    value={this.state.placeOfDiagnosis} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="treatmentReceived"
-                    placeholder="What treatment did you receive?" 
-                    value={this.state.treatmentReceived} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="dateOfTreatment"
-                    placeholder="Date Of Treatment" 
-                    value={this.state.dateOfTreatment} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
-                <br />
-                <input
-                    name="comments"
-                    placeholder="Comments" 
-                    value={this.state.comments} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
-                />
+                <center>
+                    <br />
+                    <h1>Cancer History</h1>
+                    <br /> <br />
+                    <table border = "1">
+                     <table height="300">
+                            <tr>
+                                <td>Oncologist Info:</td>
+                            <td>
+                                <input
+                                    name="oncologistName"
+                                    placeholder="Oncologist's Name"
+                                    value={this.state.oncologistName}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="officeNumber"
+                                    placeholder="Medical Office Phone #"
+                                    value={this.state.officeNumber}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="officeFax"
+                                    placeholder="Office's Fax"
+                                    value={this.state.officeFax}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+
+                            <td>
+                                <input
+                                    name="officeEmail"
+                                    placeholder="Office's Email"
+                                    value={this.state.officeEmail}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+
+                            <td>
+                                <input
+                                    name="address"
+                                    placeholder="Address"
+                                    value={this.state.address}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+
+                        </tr>
+
+                            <tr>
+                                <td>Cancer Diagnosis:</td>
+                            <td>
+                                <input
+                                    name="typeOfCancerTumor"
+                                    placeholder="Enter Type Of Cancer/Tumor"
+                                    value={this.state.typeOfCancerTumor}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="dateOfDiagnosis"
+                                    placeholder="Date of diagnosis"
+                                    value={this.state.dateOfDiagnosis}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="ageAtDiagnosis"
+                                    placeholder="Age at Diagnosis"
+                                    value={this.state.ageAtDiagnosis}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="placeOfDiagnosis"
+                                    placeholder="Place Of Diagnosis"
+                                    value={this.state.placeOfDiagnosis}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <p>
+                                    <b>Status:</b> &nbsp;
+                                <input type="radio" name="CancerStatus" value="Active" />
+                                    Active &nbsp;&nbsp;
+                                <input type="radio" name="CancerStatus" value="Removed" />
+                                    Removed &nbsp;&nbsp;
+                                <input type="radio" name="CancerStatus" value="In Remission" />
+                                    In Remission &nbsp;&nbsp;
+                                </p>
+                            </td>
+                        </tr>
+
+                            <tr>
+                                <td>Cancer Treatment:</td>
+                            <td>
+                                <input
+                                    name="treatmentReceived"
+                                        placeholder="What treatment did you receive?"
+                                    value={this.state.treatmentReceived}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="dateOfTreatment"
+                                    placeholder="Date Of Treatment"
+                                    value={this.state.dateOfTreatment}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                            <td>
+                                <input
+                                    name="comments"
+                                    placeholder="Comments"
+                                    value={this.state.comments}
+                                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                                    />
+                                    &nbsp;
+                            </td>
+                        </tr>
+                        </table>
+                        </table>
+                </center>
+
+                
+                <br /> <br /> <br />
                 <br />
                 
                 
