@@ -27,6 +27,7 @@ import Immunizations from './components/Immunizations';
 import InsuranceInfo from './components/InsuranceInfo';
 import MedicalProvider from './components/MedicalProvider';
 import AppointmentsDrVisits from './components/AppointmentsDrVisits';
+import FamiltHistory from './components/FamilyHistory';
 
 
 
@@ -56,6 +57,7 @@ export default () => (
         <Route path='/insurance' component={InsuranceInfo} />
         <Route path='/caregivers' component={Caregivers} />
         <Route path='/medicalprovider' component={MedicalProvider} />
+        <Route path='/familyhistory' component={FamiltHistory} />
 
 
 
