@@ -24,6 +24,9 @@ import WomensHealth from './components/WomensHealth';
 
 import HospitalAdmit from './components/HospitalAdmit';
 import Immunizations from './components/Immunizations';
+import InsuranceInfo from './components/InsuranceInfo';
+import MedicalProvider from './components/MedicalProvider';
+import AppointmentsDrVisits from './components/AppointmentsDrVisits';
 
 
 
@@ -38,7 +41,6 @@ export default () => (
         <Route path='/uploadMedData' component={UploadMedData} />
         <Route path='/cancerHistory' component={CancerHistory} />
         <Route path='/login' component={Login} />
-        <Route path='/caregivers' component={Caregivers} />
 
 
         <Route path='/heartHistory' component ={HeartHistory} />
@@ -51,11 +53,15 @@ export default () => (
         <Route path='/stdHistory' component ={STDHistory} />
         <Route path='/womensHistory' component ={WomensHealth} />
 
+        <Route path='/insurance' component={InsuranceInfo} />
+        <Route path='/caregivers' component={Caregivers} />
+        <Route path='/medicalprovider' component={MedicalProvider} />
 
 
-        <Route path='/pastVisits' component ={HospitalAdmit} />
+
+        <Route path='/hospitaladmittancecard' component ={HospitalAdmit} />
         <Route path='/immunizations' component ={Immunizations} />
-        <Route path='/pastVisits' component ={HospitalAdmit} />
+        <Route path='/drappointments' component ={AppointmentsDrVisits} />
 
 
   </Layout>

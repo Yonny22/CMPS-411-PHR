@@ -45,7 +45,7 @@ class FetchData extends Component {
                     <li><a href='/immunizations'>Immunizations</a></li>
                     <li><a href='/exams'>Exams</a> </li>
                     <li><a href='/pastVisits'>History of Hospital Visits</a></li>
-                    
+                    <li><a href='/drappointments'>Listing Of All Recorded Dr Appointments</a></li>
                 </ul>
             </p>        
       </div>

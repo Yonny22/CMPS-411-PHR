@@ -34,56 +34,56 @@ export default class STDHistory extends React.Component{
                     name="placeholder1"
                     placeholder="Comments" 
                     value={this.state.placeholder1} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder2"
                     placeholder="Comments" 
                     value={this.state.placeholder2} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder3"
                     placeholder="Comments" 
                     value={this.state.placeholder3} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder4"
                     placeholder="Comments" 
                     value={this.state.placeholder4} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder5"
                     placeholder="Comments" 
                     value={this.state.placeholder5} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder6"
                     placeholder="Comments" 
                     value={this.state.placeholder6} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder7"
                     placeholder="Comments" 
                     value={this.state.placeholder7} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
                 <input
                     name="placeholder8"
                     placeholder="Comments" 
                     value={this.state.placeholder8} 
-                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                    onChange={e => this.change(e)}//setState({ name: e.target.value})}/> 
                 />
                 <br />
 
