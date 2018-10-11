@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actionCreators } from '../store/Counter';
+import './table.css';
 
 
 export default class CancerHistory extends React.Component {
@@ -53,15 +54,19 @@ export default class CancerHistory extends React.Component {
                     <br />
                     <center><h1>EMERGENCY CARD</h1></center>
                     <br /> <br />  
-                    <table border=".5">
-                        <table width="1000" >
-                        <tr>
-                            <td><h2>CONTACT CARD</h2></td>
-                            <td><h2>MEDICAL INFO</h2></td>
+                    <table class = "table-card">
+                        <table class = "table-cardInfo">
+                            <tr>
+                                <td></td>
+                                <td><h2>CONTACT CARD</h2></td>
+                                <td><h2>MEDICAL INFO</h2></td>
+                                <td></td>
+                                
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Full Name: </td>
                             <td>
-                                FullName:
+                                
                                 <input
                                 name="Name"
                                 placeholder="Name"
@@ -86,9 +91,10 @@ export default class CancerHistory extends React.Component {
                                 />
                             </td>
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Contact #: </td>
                             <td>
-                                Contact #: 
+                                
                                 <input
                                 name="Phone"
                                 placeholder="Phone"
@@ -113,9 +119,10 @@ export default class CancerHistory extends React.Component {
                                 />
                             </td>
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Address: </td>
                             <td>
-                                Address: .
+                                 
                                 <input
                                 name="HomeAddress"
                                 placeholder="1234 Main St."
@@ -142,16 +149,17 @@ export default class CancerHistory extends React.Component {
                         </tr>
                         </table>
                     
-                    <center><h1>IN CASE OF EMERGENCY, CALL THESE PEOPLE IMMEDIATELY</h1></center>
-                    <table width="1000">
-                        <tr>
+                    <center><h1 class = "red">IN CASE OF EMERGENCY, CALL THESE PEOPLE IMMEDIATELY</h1></center>
+                    <table width="1000" class="table-cardContact">
+                            <tr>
+                                <td></td>
                             <td><h2>CONTACT NAME</h2></td>
                             <td><h2>CONTACT NUMBER </h2></td>
                             <td><h2>RELATIONSHIP</h2></td>
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Physician:</td>
                             <td>
-                                Physician:
                                 <input
                                     name="Contact1"
                                     placeholder="Doctor"
@@ -176,40 +184,42 @@ export default class CancerHistory extends React.Component {
                                 />
                             </td>
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Contact 1:</td>
                             <td>
-                                Contact 1:
+                                
                                 <input
-                                    name="Contact2"
-                                    placeholder="Contact2"
-                                    value={this.state.Contact2}
+                                    name="Contact1"
+                                    placeholder="Contact1"
+                                    value={this.state.Contact1}
                                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                                 />
                             </td>
-                            <td>
+                                <td>
                                 <input
-                                    name="PhoneContact2"
+                                    name="PhoneContact1"
                                     placeholder="(123) 666-6666"
-                                    value={this.state.PhoneContact2}
+                                    value={this.state.PhoneContact1}
                                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                                 />
                             </td>
                             <td>
                                 <input
-                                    name="RelationshipContact2"
+                                    name="RelationshipContact1"
                                     placeholder="Parent"
-                                    value={this.state.RelationshipContact2}
+                                    value={this.state.RelationshipContact1}
                                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                                 />
                             </td>
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Contact 2:</td>
                             <td>
-                                Contact 3:
+                                
                                 <input
-                                    name="Contact3"
-                                    placeholder="Contact3"
-                                    value={this.state.Contact3}
+                                    name="Contact2"
+                                    placeholder="Contact2"
+                                    value={this.state.Contact2}
                                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                                 />
                             </td>
@@ -230,9 +240,9 @@ export default class CancerHistory extends React.Component {
                                 />
                             </td>
                         </tr>
-                        <tr>
+                            <tr>
+                                <td>Contact 3:</td>
                             <td>
-                                Contact 4:
                                 <input
                                     name="Contact3"
                                     placeholder="Contact3"
@@ -261,7 +271,7 @@ export default class CancerHistory extends React.Component {
                 
                 
                 <br />
-                <table width="1091">
+                <table width="1091" class = "table-cardRadio">
                         <tr>
                             <td>
                                 <p>

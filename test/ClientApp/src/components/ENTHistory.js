@@ -1,6 +1,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import './table.css';
 
 export default class ENTHistory extends React.Component{
     state = {
@@ -32,11 +33,11 @@ export default class ENTHistory extends React.Component{
             <form>
                 <center>
                     <br />  
-                    <h1>EAR, NOSE, AND THROAT</h1>
+                    <h1>EAR, NOSE, AND THROAT HISTORY</h1>
                     <br /> <br />   
-                    <table border="1">
-                        <h2>Ear</h2>
-                    <table width="1000">
+                    <table>
+                        <center><h2>Ear</h2></center>
+                    <table class="table-Ear">
                         
                         <tr>
                             <td>Diagnosis:</td>
@@ -162,8 +163,8 @@ export default class ENTHistory extends React.Component{
 
                     <br /> <br />
 
-                    <h2>Nose</h2>
-                    <table width="1000">
+                    <center><h2>Nose</h2></center>
+                    <table class="table-Nose">
 
                         <tr>
                             <td>Diagnosis:</td>
@@ -290,8 +291,8 @@ export default class ENTHistory extends React.Component{
                     <br /> <br />
 
 
-                    <h2>Throat</h2>
-                    <table width="1000">
+                    <center><h2>Throat</h2></center>
+                    <table class = "table-Throat">
 
                         <tr>
                             <td>Diagnosis:</td>

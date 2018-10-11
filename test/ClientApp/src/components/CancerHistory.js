@@ -2,6 +2,7 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actionCreators } from '../store/Counter';
+import './table.css';
 
 export default class CancerHistory extends React.Component{
     state = {
@@ -46,8 +47,8 @@ export default class CancerHistory extends React.Component{
                     <br />
                     <h1>Cancer History</h1>
                     <br /> <br />
-                    <table border = "1">
-                     <table height="300">
+                    <table class ="table">
+                     <table class = "table-cancer">
                             <tr>
                                 <td>Oncologist Info:</td>
                             <td>
@@ -180,6 +181,8 @@ export default class CancerHistory extends React.Component{
                                     />
                                     &nbsp;
                             </td>
+                                <td></td>
+                                <td></td>
                         </tr>
                         </table>
                         </table>
