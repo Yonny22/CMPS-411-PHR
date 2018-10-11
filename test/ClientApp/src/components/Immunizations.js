@@ -91,7 +91,7 @@ export default class Caregivers extends React.Component{
                 <br />
 
                                     
-                <button onClick={() => this.onSubmit()} /> 
+                <input id="submit" name="submit" type="submit" value="Update" onclick={() => this.onSubmit()} />
 
             </form>
         );

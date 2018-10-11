@@ -105,7 +105,7 @@ export default class HeartHistory extends React.Component{
                 
                 
                 
-                <button onClick={() => this.onSubmit()} /> 
+                <input id="submit" name="submit" type="submit" value="Update" onclick={() => this.onSubmit()} />
             </form>
         );
     }
