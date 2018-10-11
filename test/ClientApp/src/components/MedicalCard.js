@@ -50,8 +50,9 @@ export default class CancerHistory extends React.Component {
                 
                 
                 <center>
-                    <br /><br /><br /><br /><br /><br />
+                    <br />
                     <center><h1>EMERGENCY CARD</h1></center>
+                    <br /> <br />  
                     <table border=".5">
                         <table width="1000" >
                         <tr>
@@ -298,7 +299,7 @@ export default class CancerHistory extends React.Component {
                     </table>
                 </center>
 
-                <br />
+                <br /> <br /> <br />  
                 <br />
 
                 <input id="submit" name="submit" type="submit" value="Update" onclick={() => this.onSubmit()} />

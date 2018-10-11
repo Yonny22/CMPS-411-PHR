@@ -32,7 +32,7 @@ class FetchData extends Component {
                     <li><a href='/medicalConditions'>Medical Conditions</a></li>
                     <li><a href='/womensHistory'>Womens History</a> </li>
                     <li><a href='/mensHistory'>Mens History</a></li>
-                    <li><a href='/faceHistory'>Ear, Nose, And Mouth</a> </li>
+                    <li><a href='/faceHistory'>Ear, Nose, And Throat</a> </li>
                     <li><a href='/mentalHistory'>Mental History</a> </li>
                     <li><a href='/stdHistory'>STD History</a> </li>
                 </ul>
