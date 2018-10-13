@@ -1,0 +1,55 @@
+﻿.table-Ear {
+    
+    border: solid;
+    border-collapse: separate;
+    padding: 30px;
+}
+.table-Nose {
+    
+    border: solid;
+    border-collapse: separate;
+    padding: 30px;
+}
+.table-Throat {
+    
+    border: solid;
+    border-collapse: separate;
+    padding: 20px;
+}
+
+.table-card {
+    border: solid;
+    border-collapse: separate;
+    padding: 20px;
+}
+
+.red{
+    border:solid 4px red;
+}
+.table-cardContact {
+    border: 2px solid;
+    border-collapse: separate;
+    padding: 10px;
+}
+
+.table-cardRadio {
+    border:2px solid;
+    border-collapse: separate;
+    padding: 10px;
+}
+
+.table-cardInfo {
+    border: 2px solid;
+    border-collapse: separate;
+    padding: 10px;
+    border-spacing:20px;
+}
+
+
+
+.table-cancer {
+    height: 300px;
+    border: solid;
+    border-collapse: separate;
+    padding:30px;
+}

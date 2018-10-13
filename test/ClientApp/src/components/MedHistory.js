@@ -32,7 +32,7 @@ class FetchData extends Component {
                     <li><a href='/medicalConditions'>Medical Conditions</a></li>
                     <li><a href='/womensHistory'>Womens History</a> </li>
                     <li><a href='/mensHistory'>Mens History</a></li>
-                    <li><a href='/faceHistory'>Ear, Nose, And Mouth</a> </li>
+                    <li><a href='/faceHistory'>Ear, Nose, And Throat</a> </li>
                     <li><a href='/mentalHistory'>Mental History</a> </li>
                     <li><a href='/stdHistory'>STD History</a> </li>
                 </ul>
@@ -45,7 +45,7 @@ class FetchData extends Component {
                     <li><a href='/immunizations'>Immunizations</a></li>
                     <li><a href='/exams'>Exams</a> </li>
                     <li><a href='/pastVisits'>History of Hospital Visits</a></li>
-                    
+                    <li><a href='/drappointments'>Listing Of All Recorded Dr Appointments</a></li>
                 </ul>
             </p>        
       </div>
