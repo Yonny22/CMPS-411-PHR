@@ -4,14 +4,17 @@ import { connect } from 'react-redux';
 
 export default class Caregivers extends React.Component{
     state = {
-        placeholer1: 'value1',
-        placeholer2: 'value2',
-        placeholer3: 'value3',
-        placeholer4: 'value4',
-        placeholer5: 'value5',
-        placeholer6: 'value6',
-        placeholer7: 'value7',
-        placeholer8: 'value8',
+        HospitalName: 'value1',
+        CareName: 'value2',
+        CareAddress: 'value3',
+        CareNum: 'value4',
+        CareEmail: 'value5',
+        IfHospital: 'value6',
+        HospialName: 'value7',
+        HospitalAdd: 'value8',
+        HospitalNum: 'value9',
+        HospitalEmail: 'value10',
+        HospitalComments: 'value11',
 
     };
 
@@ -31,58 +34,79 @@ export default class Caregivers extends React.Component{
         return(
             <form>
                 <input
-                    name="placeholder1"
-                    placeholder="Comments" 
-                    value={this.state.placeholder1} 
+                    name="PatientName"
+                    placeholder="Patients Name" 
+                    value={this.state.PatientName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder2"
-                    placeholder="Comments" 
-                    value={this.state.placeholder2} 
+                    name="CareName"
+                    placeholder="Caregiver's Name" 
+                    value={this.state.CareName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder3"
-                    placeholder="Comments" 
-                    value={this.state.placeholder3} 
+                    name="CareAddress"
+                    placeholder=" Caregiver Address" 
+                    value={this.state.CareAddress} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder4"
-                    placeholder="Comments" 
-                    value={this.state.placeholder4} 
+                    name="CareNum"
+                    placeholder="Phone #" 
+                    value={this.state.CareNum} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder5"
-                    placeholder="Comments" 
-                    value={this.state.placeholder5} 
+                    name="CareEmail"
+                    placeholder="Email" 
+                    value={this.state.CareEmail} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder6"
-                    placeholder="Comments" 
-                    value={this.state.placeholder6} 
+                    name="IfHospital"
+                    placeholder="Residing Hospuital" 
+                    value={this.state.IfHospital} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder7"
-                    placeholder="Comments" 
-                    value={this.state.placeholder7} 
+                    name="HospitalName"
+                    placeholder="Hospital Name" 
+                    value={this.state.HospitalName} 
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
                 <input
-                    name="placeholder8"
-                    placeholder="Comments" 
-                    value={this.state.placeholder8} 
+                    name="HospitalAdd"
+                    placeholder="Hospital Address" 
+                    value={this.state.HospitalAdd} 
+                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                />
+                <br />
+                <input
+                    name="HospitalNum"
+                    placeholder="Hospital Phone"
+                    value={this.state.HospitalNum}
+                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                />
+                <br />
+                <input
+                    name="HospitalEmail"
+                    placeholder="Hospital Email"
+                    value={this.state.HospitalEmail}
+                    onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
+                />
+                <br />
+                <input
+                    name="HospitalComments"
+                    placeholder="Hospital Comments"
+                    value={this.state.HospitalComments}
                     onChange={e => this.change(e)}//setState({ oncologistName: e.target.value})}/> 
                 />
                 <br />
